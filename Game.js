@@ -7,6 +7,7 @@ function Game() {
     var body;
     var titleDiv;
     var title;
+    var newRandoA;
     function buildSplash(){
         body = document.body;
         titleDiv = document.createElement('div');
@@ -57,7 +58,7 @@ function Game() {
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');
         questionText.setAttribute('class','question-text')
-        questionText.innerText= Question(chosenArtist);
+        questionText.innerText= question(chosenArtist);
         questionDiv.appendChild(questionText);
         body.appendChild(questionDiv);
 
@@ -79,7 +80,7 @@ function Game() {
 
         buttonb = document.createElement('button');
         buttonb.setAttribute('class', 'choice-b');
-        buttonb.innerText = 'B';
+        buttonb.innerText = newRandoA;
 
         buttonc = document.createElement('button');
         buttonc.setAttribute('class', 'choice-c');
@@ -115,10 +116,13 @@ function Game() {
         body.setAttribute('class', 'hide');
         startGame(button.innerText);
     }
+    
+    
 
-    function Question(artistChosen) {
-        var newRando =getRandomInt(15);
-        return ("This "+ button.innerText +" quote is from what song?"+ artistChosen[newRando].songQuote)
+    function question(artistChosen) {
+        var newRandoQ = getRandomInt(15);  // A Random Number between 0 and 14 is gotten 
+        newRandoA = artistChosen[newRandoQ].songName; 
+        return ("This "+ button.innerText +" quote is from what song?"+ artistChosen[newRandoQ].songQuote);
     }
 
     function getRandomInt(max) {
