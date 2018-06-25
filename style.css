@@ -85,16 +85,19 @@ body {
     background: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15);
     padding: 5px;
+    width: 200px;
   }
   
   .answer-b-box {
     background: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15);
     padding: 5px;
+    width: 200px;
   }
   
 .answer-c-box {
     background: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15);
     padding: 5px;
+    width: 200px;
 }

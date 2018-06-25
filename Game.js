@@ -74,15 +74,15 @@ function Game() {
         innerDivC = document.createElement('div');
         innerDivC.setAttribute('class', 'answer-c-box');
         
-        buttona = document.createElement('button');
+        buttona = document.createElement('h5');
         buttona.setAttribute('class', 'choice-a');
         buttona.innerText = 'A';
 
-        buttonb = document.createElement('button');
+        buttonb = document.createElement('h5');
         buttonb.setAttribute('class', 'choice-b');
         buttonb.innerText = newRandoA;
 
-        buttonc = document.createElement('button');
+        buttonc = document.createElement('h5');
         buttonc.setAttribute('class', 'choice-c');
         buttonc.innerText = 'C';
 
@@ -95,15 +95,16 @@ function Game() {
         body.appendChild(answersDiv);
         body.setAttribute('class', 'game-screen') 
 
-        buttona.addEventListener('click', nextQuestion)
-        buttonb.addEventListener('click', nextQuestion)
-        buttonc.addEventListener('click', nextQuestion)
+        innerDivA.addEventListener('click', nextQuestion)
+        innerDivB.addEventListener('click', nextQuestion)
+        innerDivC.addEventListener('click', nextQuestion)
 
         clicks++;
         if(clicks === 11) {
             questionDiv.remove();
             answersDiv.remove(); 
             body.setAttribute('class', 'hide');
+            endGame();
         }
     }
 
@@ -128,6 +129,11 @@ function Game() {
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
+
+    function endGame() {
+
+    }
+
 }
 
 window.addEventListener('load', Game)
