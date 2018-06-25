@@ -573,4 +573,4 @@ var artistObject = {
     ]
 };
 
-console.log("What Artist do you love?: Kanye (0), Jay-Z ")
+
