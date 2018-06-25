@@ -44,6 +44,8 @@ function Game() {
     var buttonb;
     var buttonc;
 
+    var clicks = 0;
+
     function startGame (nameofartist) { 
         var chosenArtist;
         if (artistObject.artistsArray[5].name === nameofartist) {
@@ -89,11 +91,32 @@ function Game() {
         answersDiv.appendChild(innerDivB);
         answersDiv.appendChild(innerDivC);
         body.appendChild(answersDiv);
-        body.setAttribute('class', 'game-screen')
+        body.setAttribute('class', 'game-screen') 
+
+        buttona.addEventListener('click', nextQuestion)
+        buttonb.addEventListener('click', nextQuestion)
+        buttonc.addEventListener('click', nextQuestion)
+
+        clicks++;
+        if(clicks === 11) {
+            questionDiv.remove();
+            answersDiv.remove(); 
+            body.setAttribute('class', 'hide');
+        }
+    }
+
+    function nextQuestion(){
+        buttona.removeEventListener('click', nextQuestion);
+        buttonb.removeEventListener('click', nextQuestion);
+        buttonc.removeEventListener('click', nextQuestion);
+        questionDiv.remove();
+            answersDiv.remove();
+        body.setAttribute('class', 'hide');
+        startGame(button.innerText);
     }
 
     function Question(artistChosen) {
-        
+
         return ("The quote:"+ artistChosen[0].songQuote + " is from what "+button.innerText+" song?")
     }
 }
