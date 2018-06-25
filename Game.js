@@ -1,6 +1,7 @@
 'use strict'
 
 function Game() {
+
     var buttonDiv;
     var button;
     var body;
@@ -54,7 +55,7 @@ function Game() {
         body = document.body;
         questionDiv = document.createElement('div');
         questionDiv.setAttribute('class', 'question-box paper');
-        questionText = document.createElement('h1');
+        questionText = document.createElement('h3');
         questionText.setAttribute('class','question-text')
         questionText.innerText= Question(chosenArtist);
         questionDiv.appendChild(questionText);
@@ -116,8 +117,12 @@ function Game() {
     }
 
     function Question(artistChosen) {
+        var newRando =getRandomInt(15);
+        return ("This "+ button.innerText +" quote is from what song?"+ artistChosen[newRando].songQuote)
+    }
 
-        return ("The quote:"+ artistChosen[0].songQuote + " is from what "+button.innerText+" song?")
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
     }
 }
 
