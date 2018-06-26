@@ -19,7 +19,7 @@ function Game() {
 
         buttonDiv = document.createElement('div');     // Div to place all Artist buttons inside
         buttonDiv.setAttribute('class', 'artist-buttons');
-        button = document.createElement('button');     // Button Artist option
+        button = document.createElement('h1');     // Button Artist option
         button.setAttribute('class', 'artist-button-drake');
         button.innerText = 'Drake'; 
         buttonDiv.appendChild(button);         
