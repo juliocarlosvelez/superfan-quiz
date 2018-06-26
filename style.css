@@ -35,8 +35,9 @@ body {
     justify-content: space-around;
 }
 .artist-buttons button{
-    background-color: rgb(255, 229, 180);
+    background-color: white;
     font-size: 30px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 }
 
 .hide {
@@ -81,23 +82,76 @@ body {
     margin-bottom: 100px;
 }
   
-  .answer-a-box {
+.answer-a-box {
     background: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     padding: 5px;
     width: 200px;
-  }
+}
   
-  .answer-b-box {
+.answer-b-box {
     background: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     padding: 5px;
     width: 200px;
-  }
+}
   
 .answer-c-box {
     background: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
     padding: 5px;
     width: 200px;
+}
+
+.replay-page {
+    margin:0 20px ;
+    padding: 0;
+    background: rgb(226, 255, 224);
+}
+  
+.game-info {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.replay-buttons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 90px;
+} 
+
+.score h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    color: rgb(80, 80, 80);
+}
+
+.fan-grade {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+.try-again {
+    padding: 5px;
+    width: 150px;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    color: rgb(73, 73, 73);
+}
+
+.home {
+    padding: 5px;
+    width: 150px;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    color: rgb(73, 73, 73);
 }
