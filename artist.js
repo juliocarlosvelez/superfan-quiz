@@ -30,7 +30,7 @@ var artistObject = {
                 {
                     songName: 'Father Stretch My Hands Pt. 1',
                     yearReleased: '2016',
-                    songQuote: '\"Now, if I fuck this model, And she just bleached her asshole, And I get bleach on my T-shirt, I\'ma feel like an asshole\"',
+                    songQuote: '\"Now, if I f**k this model, And she just bleached her asshole, And I get bleach on my T-shirt, I\'ma feel like an asshole\"',
                     albumOfSong: 'The Life of Pablo'
                 },
                 {
@@ -42,13 +42,13 @@ var artistObject = {
                 {
                     songName: 'Real Friends',
                     yearReleased: '2016',
-                    songQuote: '\"I\'m a deadbeat cousin, I hate family reunions, Fuck the church up by drinkin at the communion, Spillin free wine, now my tux is ruined\"',
+                    songQuote: '\"I\'m a deadbeat cousin, I hate family reunions, F**k the church up by drinkin at the communion, Spillin free wine, now my tux is ruined\"',
                     albumOfSong: 'The Life of Pablo'
                 },
                 {
                     songName: 'POWER',
                     yearReleased: '2010',
-                    songQuote: '\"And I embody every characteristic of the egotistic, He knows, he’s so, fucking gifted\"',
+                    songQuote: '\"And I embody every characteristic of the egotistic, He knows, he’s so, f**king gifted\"',
                     albumOfSong: 'My Beautiful Dark Twisted Fantasy'
                 },
                 {
@@ -185,7 +185,7 @@ var artistObject = {
                 {
                     songName: 'Kill Jay Z',
                     yearReleased: '2017',
-                    songQuote: '\"Fuck Jay Z, I mean, you shot your own brother, How can we know if we can trust Jay Z?\"',
+                    songQuote: '\"F**k Jay Z, I mean, you shot your own brother, How can we know if we can trust Jay Z?\"',
                     albumOfSong: '4:44'
                 }
             ]
@@ -196,19 +196,19 @@ var artistObject = {
                 {
                     songName: 'Get Up 10',
                     yearReleased: '2018',
-                    songQuote: '\"Used to dance in a club right across from my school, I said \"dance\" not \"fuck\", don\'t get it confused\"',
+                    songQuote: '\"Used to dance in a club right across from my school, I said \"dance\" not \"f**k\", don\'t get it confused\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
                     songName: 'Drip',
                     yearReleased: '2018',
-                    songQuote: '\"I\'ve been that bitch since pajamas with footies, Won MVP, and I\'m still a rookie, like woo\"',
+                    songQuote: '\"I\'ve been that bi**ch since pajamas with footies, Won MVP, and I\'m still a rookie, like woo\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
                     songName: 'Bodak Yellow',
                     yearReleased: '2018',
-                    songQuote: '\"They see pictures, they say, \"Goals,\" bitch, I\'m who they tryna be\"',
+                    songQuote: '\"They see pictures, they say, \"Goals,\" bi**ch, I\'m who they tryna be\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
@@ -220,25 +220,25 @@ var artistObject = {
                 {
                     songName: 'Best Life',
                     yearReleased: '2018',
-                    songQuote: '\"N***a, you a pussy and a rat, you like Tom and Jerry\"',
+                    songQuote: '\"N***a, you a p**sy and a rat, you like Tom and Jerry\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
                     songName: 'I Like It',
                     yearReleased: '2018',
-                    songQuote: '\"Told that bitch I\'m sorry though, \'Bout my coins like Mario, Yeah they call me Cardi B, I run this shit like cardio\"',
+                    songQuote: '\"Told that bi**ch I\'m sorry though, \'Bout my coins like Mario, Yeah they call me Cardi B, I run this shit like cardio\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
                     songName: 'Red Barz',
                     yearReleased: '2017',
-                    songQuote: '\"You a real n***a mad at a bitch for getting bread?, You\'s a bitch from birth, you just grew a third leg, woo!\"',
+                    songQuote: '\"You a real n***a mad at a bi**ch for getting bread?, You\'s a bi**ch from birth, you just grew a third leg, woo!\"',
                     albumOfSong: 'Not on an Album'
                 },
                 {
                     songName: 'Bartier Cardi',
                     yearReleased: '2018',
-                    songQuote: '\"Diamonds all over my body, Shinin\' all over my body, Cardi got your bitch on molly\"',
+                    songQuote: '\"Diamonds all over my body, Shinin\' all over my body, Cardi got your bi**ch on molly\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
@@ -250,7 +250,7 @@ var artistObject = {
                 {
                     songName: 'I Do',
                     yearReleased: '2018',
-                    songQuote: '\"Now I\'m a boss, I write my own name on the checks, Pussy so good, I say my own name during sex\"',
+                    songQuote: '\"Now I\'m a boss, I write my own name on the checks, P**sy so good, I say my own name during sex\"',
                     albumOfSong: 'Invasion of Privacy'
                 },
                 {
@@ -280,8 +280,8 @@ var artistObject = {
                 {
                     songName: 'Foreva',
                     yearReleased: '2016',
-                    songQuote: '\"A hoe can hate but don\'t be fucking with my commas, And if she is I\'ll shape her up and she gon\' get the line up\"',
-                    albumOfSong: 'Gangsta Bitch Music Vol. 1'
+                    songQuote: '\"A hoe can hate but don\'t be f**king with my commas, And if she is I\'ll shape her up and she gon\' get the line up\"',
+                    albumOfSong: 'Gangsta Bi**ch Music Vol. 1'
                 }
             ]
         },
@@ -487,13 +487,13 @@ var artistObject = {
                 {
                     songName: 'Best I Ever Had',
                     yearReleased: '2009',
-                    songQuote: '\"Always felt like you was so accustomed to the fast life, Have a nigga thinkin\' that he met you in a past life\"',
+                    songQuote: '\"Always felt like you was so accustomed to the fast life, Have a ni**a thinkin\' that he met you in a past life\"',
                     albumOfSong: 'So Far Gone'
                 },
                 {
                     songName: 'Successful',
                     yearReleased: '2009',
-                    songQuote: '\"The young spitter that everybody in rap fear, A lot of y\'all are still sounding like last year, The game need change and I\'m the motherfuckin\' cashier\"',
+                    songQuote: '\"The young spitter that everybody in rap fear, A lot of y\'all are still sounding like last year, The game need change and I\'m the motherf**kin\' cashier\"',
                     albumOfSong: 'So Far Gone'
                 },
                 {
@@ -505,13 +505,13 @@ var artistObject = {
                 {
                     songName: 'HYFR',
                     yearReleased: '2012',
-                    songQuote: '\"Admitted it to me the first time we dated, But she was no angel, and we never waited, I took her for sushi, she wanted to fuck, So we took it to go, told them don\'t even plate it\"',
+                    songQuote: '\"Admitted it to me the first time we dated, But she was no angel, and we never waited, I took her for sushi, she wanted to f**k, So we took it to go, told them don\'t even plate it\"',
                     albumOfSong: 'Take Care'
                 },
                 {
                     songName: 'From Time',
                     yearReleased: '2013',
-                    songQuote: '\"You a flower child, beautiful child, I\'m in your zone, Looking like you came from the 70\'s on your own, My mother is 66 and her favorite line to hit me with is, Who the fuck wants to be 70 and alone?\"',
+                    songQuote: '\"You a flower child, beautiful child, I\'m in your zone, Looking like you came from the 70\'s on your own, My mother is 66 and her favorite line to hit me with is, Who the f**k wants to be 70 and alone?\"',
                     albumOfSong: 'Nothing Was the Same'
                 },
                 {
@@ -523,7 +523,7 @@ var artistObject = {
                 {
                     songName: 'No Tellin\'',
                     yearReleased: '2015',
-                    songQuote: '\"I took the summer off to get it right, Yeah, I gave these boys a shot and they fuckin\' failed, Niggas like "You took the summer off? We couldn\'t tell"\"',
+                    songQuote: '\"I took the summer off to get it right, Yeah, I gave these boys a shot and they f**kin\' failed, Ni**as like "You took the summer off? We couldn\'t tell"\"',
                     albumOfSong: 'If You\'re Reading This It\'s Too Late'
                 },
                 {
@@ -553,7 +553,7 @@ var artistObject = {
                 {
                     songName: 'The Motto',
                     yearReleased: '2012',
-                    songQuote: '\"Go Uptown, New York City, bitch, Them Spanish girls love me like I\'m Aventura\"',
+                    songQuote: '\"Go Uptown, New York City, bi**ch, Them Spanish girls love me like I\'m Aventura\"',
                     albumOfSong: 'Take Care'
                 },
                 {
