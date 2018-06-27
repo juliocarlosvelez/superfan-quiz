@@ -52,10 +52,10 @@ var artistObject = {
                     albumOfSong: 'My Beautiful Dark Twisted Fantasy'
                 },
                 {
-                    songName: 'Forever',
-                    yearReleased: '2009',
-                    songQuote: '\"Now super bad chicks givin\' me McLovin, You would think I ran the world, like Michelle\'s husband\"',
-                    albumOfSong: 'More than a Game'
+                    songName: 'Heartless',
+                    yearReleased: '2008',
+                    songQuote: '\"How could you be so, cold as the winter wind when it breeze, yo, Just remember that you talkin\' to me though, You know need to watch the way you talkin\' to me, yo\"',
+                    albumOfSong: '808\'s and Heartbreaks'
                 },
                 {
                     songName: 'Gold Digger',
@@ -479,10 +479,10 @@ var artistObject = {
             name: "Drake",
             songs: [ 
                 {
-                    songName: 'Duppy Freestyle',
-                    yearReleased: '2018',
-                    songQuote: '\"Keep gettin\' temperature checks, They know that my head overheats\"',
-                    albumOfSong: 'Not on an Album'
+                    songName: 'Weston Road Flows',
+                    yearReleased: '2016',
+                    songQuote: '\"Yeah, I brought your wifey out to Saint Martin, She violated, I sent her back where it all started, How quick they are to forget about their bachelor apartment\"',
+                    albumOfSong: 'Views'
                 },
                 {
                     songName: 'Best I Ever Had',
@@ -548,25 +548,25 @@ var artistObject = {
                     songName: 'Diplomatic Immunity',
                     yearReleased: '2018',
                     songQuote: '\"Calamari rings and tomato, I got the sauce and now shorties keep claimin\' preggo, Wakin\' up at 6 PM like, \"Where does the day go?\", Forecastin\' tornadoes, brainstormin\' retaliation at dinner tables\"',
-                    albumOfSong: 'Scary Hours'
+                    albumOfSong: 'Scary Hours ep'
                 },
                 {
-                    songName: 'Versace (Remix)',
-                    yearReleased: '2013',
-                    songQuote: '\"Speakin\' in lingo, man, this for my nigga, That trap out the bando, This for my n***s that call up Fernando, To move a piano\"',
-                    albumOfSong: 'Not on an Album'
+                    songName: 'The Motto',
+                    yearReleased: '2012',
+                    songQuote: '\"Go Uptown, New York City, bitch, Them Spanish girls love me like I\'m Aventura\"',
+                    albumOfSong: 'Take Care'
                 },
                 {
-                    songName: 'How About Now',
-                    yearReleased: '2014',
-                    songQuote: '\"I used to always try and burn you CDs of my new shit, You be like \"who\'s this?\" I be like \"me, girl\", You be like \"oh, word, true shit?\", Then ask if we could listen to Ludacris\"',
-                    albumOfSong: 'Not on an Album'
+                    songName: 'Scholarships',
+                    yearReleased: '2015',
+                    songQuote: '\"I rock Kentucky blue on these hoes, Drafted, I\'m gettin\' choose by these hoes\"',
+                    albumOfSong: 'What a Time To Be Alive'
                 },
                 {
-                    songName: 'For Free',
-                    yearReleased: '2016',
-                    songQuote: '\"You knew what it was when you signed up\"',
-                    albumOfSong: 'Major Key'
+                    songName: 'Digital Dash',
+                    yearReleased: '2015',
+                    songQuote: '\"I\'m not here for no pretend shit, Just walked in with a girl that’s making triple what I’m making, what a entrance\"',
+                    albumOfSong: 'What a Time To Be Alive'
                 }
             ]
         },

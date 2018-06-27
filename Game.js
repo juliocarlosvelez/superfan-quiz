@@ -6,7 +6,6 @@ function Game() {
     var body;
     var titleDiv;
     var title;
-    var corrAnsofRanQ;
     var buttond
     var buttonc
     var buttonb
@@ -60,81 +59,33 @@ function Game() {
     buildSplash();
     var setArtist;
     function startClickc (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk); 
-        buttonDiv.remove();                
-        titleDiv.remove(); 
-        body.setAttribute('class', 'hide');
+        removeFromStart();
         setArtist = buttonc.innerText;             
         getQuestion(buttonc.innerText);                     // getQuestion Called
     }
     function startClickb (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk);
-        buttonDiv.remove();                
-        titleDiv.remove(); 
+       removeFromStart();
         setArtist = buttonb.innerText;
-        body.setAttribute('class', 'hide');              // Removal of all things in in Splash
         getQuestion(buttonb.innerText);                     // getQuestion Called
     }
     function startClickd (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk);
-        buttonDiv.remove();                
-        titleDiv.remove(); 
+       removeFromStart();
         setArtist = buttond.innerText;
-        body.setAttribute('class', 'hide');              // Removal of all things in in Splash
         getQuestion(buttond.innerText);                     // getQuestion Called
     }
     function startClickjb (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk);
-        buttonDiv.remove();                
-        titleDiv.remove(); 
+       removeFromStart();
         setArtist = buttonjb.innerText;
-        body.setAttribute('class', 'hide');              // Removal of all things in in Splash
         getQuestion(buttonjb.innerText);                     // getQuestion Called
     }
     function startClickjz (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk);
-        buttonDiv.remove();                
-        titleDiv.remove(); 
+       removeFromStart();
         setArtist = buttonjz.innerText;
-        body.setAttribute('class', 'hide');              // Removal of all things in in Splash
         getQuestion(buttonjz.innerText);                     // getQuestion Called
     }
     function startClickk (){      
-        buttonc.removeEventListener('click', startClickc);    
-        buttonb.removeEventListener('click', startClickb);
-        buttond.removeEventListener('click', startClickd);
-        buttonjb.removeEventListener('click', startClickjb);
-        buttonjz.removeEventListener('click', startClickjz);
-        buttonk.removeEventListener('click', startClickk);
-        buttonDiv.remove();                
-        titleDiv.remove(); 
+       removeFromStart();
         setArtist = buttonk.innerText;
-        body.setAttribute('class', 'hide');              // Removal of all things in in Splash
         getQuestion(buttonk.innerText);                     // getQuestion Called
     }
     var questionDiv;
@@ -149,14 +100,18 @@ function Game() {
 
     var clicks = 0;
 
+    var storeQuestion = [];
+    var answerPossible =[];
+
     function getQuestion (nameofartist) {
-        var question = new QandA(nameofartist);
+        var artist = new QandA(nameofartist);
+        storeQuestion
         body = document.body;
         questionDiv = document.createElement('div');                // Div created to place questions inside
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');                
         questionText.setAttribute('class','question-text')
-        questionText.innerText= question.getSongQuote();
+        questionText.innerText = artist.randomQuestion();
         questionDiv.appendChild(questionText);
         body.appendChild(questionDiv);
 
@@ -171,26 +126,18 @@ function Game() {
         
         innerDivC = document.createElement('div');          // Div created to place the answer
         innerDivC.setAttribute('class', 'answer-c-box');
-        
-        // Need to create a function to get 3 distinct answers
-
-
-
-
-
-
 
         buttona = document.createElement('h5');
         buttona.setAttribute('class', 'choice-a');
-        buttona.innerText = 'A';
+        buttona.innerText = artist.notAnswer1;
 
         buttonb = document.createElement('h5');
         buttonb.setAttribute('class', 'choice-b');
-        buttonb.innerText = corrAnsofRanQ;
+        buttonb.innerText = artist.answer;
 
         buttonc = document.createElement('h5');
         buttonc.setAttribute('class', 'choice-c');
-        buttonc.innerText = 'C';
+        buttonc.innerText = artist.notAnswer2;
 
         innerDivA.appendChild(buttona);
         innerDivB.appendChild(buttonb);
@@ -200,9 +147,9 @@ function Game() {
         answersDiv.appendChild(innerDivC);
         body.appendChild(answersDiv);             // This is what must be edited for 
         body.setAttribute('class', 'game-screen') // individual Artist background color go to css-html-js
-        innerDivA.addEventListener('click', nextQuestion)
-        innerDivB.addEventListener('click', nextQuestion)
-        innerDivC.addEventListener('click', nextQuestion)
+        innerDivA.addEventListener('click', nextQuestiona)
+        innerDivB.addEventListener('click', nextQuestionb)
+        innerDivC.addEventListener('click', nextQuestionc)
 
         clicks++;
         if(clicks > 10) {
@@ -215,10 +162,30 @@ function Game() {
 
     
 
-    function nextQuestion(){
-        buttona.removeEventListener('click', nextQuestion);
-        buttonb.removeEventListener('click', nextQuestion);
-        buttonc.removeEventListener('click', nextQuestion);
+    function nextQuestiona(){
+        innerDivA.removeEventListener('click', nextQuestiona);
+        innerDivB.removeEventListener('click', nextQuestionb);
+        innerDivC.removeEventListener('click', nextQuestionc);
+        questionDiv.remove();
+        answersDiv.remove();
+        body.setAttribute('class', 'hide');
+        getQuestion(setArtist);
+    }
+
+    function nextQuestionb(){
+        innerDivA.removeEventListener('click', nextQuestiona);
+        innerDivB.removeEventListener('click', nextQuestionb);
+        innerDivC.removeEventListener('click', nextQuestionc);
+        questionDiv.remove();
+        answersDiv.remove();
+        body.setAttribute('class', 'hide');
+        getQuestion(setArtist);
+    }
+
+    function nextQuestionc(){
+        innerDivA.removeEventListener('click', nextQuestiona);
+        innerDivB.removeEventListener('click', nextQuestionb);
+        innerDivC.removeEventListener('click', nextQuestionc);
         questionDiv.remove();
         answersDiv.remove();
         body.setAttribute('class', 'hide');
@@ -288,6 +255,17 @@ function Game() {
         endGameDiv2.remove();
         clicks = 0;
         getQuestion(setArtist);
+    }
+    function removeFromStart() {
+        buttonc.removeEventListener('click', startClickc);    
+        buttonb.removeEventListener('click', startClickb);
+        buttond.removeEventListener('click', startClickd);
+        buttonjb.removeEventListener('click', startClickjb);
+        buttonjz.removeEventListener('click', startClickjz);
+        buttonk.removeEventListener('click', startClickk); 
+        buttonDiv.remove();                
+        titleDiv.remove(); 
+        body.setAttribute('class', 'hide');
     }
     function goHome(){
         homeButtonDiv.removeEventListener('click', goHome);
