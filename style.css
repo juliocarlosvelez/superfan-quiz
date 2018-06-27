@@ -160,3 +160,7 @@ body {
     box-shadow: 0 5px 5px rgba(0,0,0,0.15);
     color: rgb(73, 73, 73);
 }
+
+.artist-buttons img {
+    height: 150px;
+}

@@ -23,28 +23,40 @@ function main() {
 
         buttonDiv = document.createElement('div');     // Div to place all Artist buttons inside
         buttonDiv.setAttribute('class', 'artist-buttons');
-        buttond = document.createElement('h1');     // Button Artist option
+        buttond = document.createElement('img');     // Button Artist option
         buttond.setAttribute('class', 'artist-button-drake');
+        buttond.setAttribute('alt', 'Drake');
+        buttond.setAttribute('src', 'D1.png');
         buttond.innerText = 'Drake'; 
         buttonDiv.appendChild(buttond); 
-        buttonc = document.createElement('h1');     // Button Artist option
+        buttonc = document.createElement('img');     // Button Artist option
         buttonc.setAttribute('class', 'artist-button-cardib');
+        buttonc.setAttribute('alt', 'Cardi B');
+        buttonc.setAttribute('src', 'CB2.png');
         buttonc.innerText = 'Cardi B'; 
         buttonDiv.appendChild(buttonc);
-        buttonb = document.createElement('h1');     // Button Artist option
+        buttonb = document.createElement('img');     // Button Artist option
         buttonb.setAttribute('class', 'artist-button-badbunny');
+        buttonb.setAttribute('alt', 'Bad Bunny');
+        buttonb.setAttribute('src', 'BB1.png');
         buttonb.innerText = 'Bad Bunny'; 
         buttonDiv.appendChild(buttonb);
-        buttonk = document.createElement('h1');     // Button Artist option
+        buttonk = document.createElement('img');     // Button Artist option
         buttonk.setAttribute('class', 'artist-button-kanye');
+        buttonk.setAttribute('alt', 'Kanye');
+        buttonk.setAttribute('src', 'K3.png');
         buttonk.innerText = 'Kanye'; 
         buttonDiv.appendChild(buttonk);
-        buttonjz = document.createElement('h1');     // Button Artist option
+        buttonjz = document.createElement('img');     // Button Artist option
         buttonjz.setAttribute('class', 'artist-button-jay');
+        buttonjz.setAttribute('alt', 'Jay-Z');
+        buttonjz.setAttribute('src', 'J1.png');
         buttonjz.innerText = 'Jay-Z'; 
         buttonDiv.appendChild(buttonjz);
-        buttonjb = document.createElement('h1');     // Button Artist option
+        buttonjb = document.createElement('img');     // Button Artist option
         buttonjb.setAttribute('class', 'artist-button-balvin');
+        buttonjb.setAttribute('alt', 'J Balvin');
+        buttonjb.setAttribute('src', 'JB1.png');
         buttonjb.innerText = 'J Balvin'; 
         buttonDiv.appendChild(buttonjb);
         
@@ -100,38 +112,26 @@ function main() {
 
     var clicks = 0;
     var storeQuestion = [];
-    var currentQ;
-    var indexOfA;
 
     function getQuestion (nameofartist) {
-        
         var artist = new QandA(nameofartist);
-        currentQ = artist.randomQuestion();
-        
-        for (var x=0 ; x < 20 ; x++) {
-            indexOfA = storeQuestion.indexOf(currentQ)
-            if (indexOfA > -1) {
-                currentQ = artist.randomQuestion();
-            }
-        }
-        
+        var currentQ = artist.randomQuestion();
 
         body = document.body;
         questionDiv = document.createElement('div');                // Div created to place questions inside
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');                
         questionText.setAttribute('class','question-text')
+        
         questionText.innerText = currentQ;
-
-        storeQuestion.push(currentQ);
-
+        storeQuestion[storeQuestion.length] = currentQ;
         questionDiv.appendChild(questionText);
         body.appendChild(questionDiv);
 
         var randomAnswer1 = artist.getRandomAnswer();
         var randomAnswer2 = artist.getRandomAnswer();
 
-        for (x=0 ; x < 10 ; x++) {
+        for (var x = 0 ; x < 10 ; x++) {
             if (randomAnswer1 === randomAnswer2) {
                 randomAnswer2 = artist.getRandomAnswer();
             }
