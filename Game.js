@@ -1,6 +1,6 @@
 'use strict'
 
-function Game() {
+function main() {
 
     var buttonDiv;
     var body;
@@ -99,21 +99,43 @@ function Game() {
     var buttonc;
 
     var clicks = 0;
-
     var storeQuestion = [];
-    var answerPossible =[];
+    var currentQ;
+    var indexOfA;
 
     function getQuestion (nameofartist) {
+        
         var artist = new QandA(nameofartist);
-        storeQuestion
+        currentQ = artist.randomQuestion();
+        
+        for (var x=0 ; x < 20 ; x++) {
+            indexOfA = storeQuestion.indexOf(currentQ)
+            if (indexOfA > -1) {
+                currentQ = artist.randomQuestion();
+            }
+        }
+        
+
         body = document.body;
         questionDiv = document.createElement('div');                // Div created to place questions inside
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');                
         questionText.setAttribute('class','question-text')
-        questionText.innerText = artist.randomQuestion();
+        questionText.innerText = currentQ;
+
+        storeQuestion.push(currentQ);
+
         questionDiv.appendChild(questionText);
         body.appendChild(questionDiv);
+
+        var randomAnswer1 = artist.getRandomAnswer();
+        var randomAnswer2 = artist.getRandomAnswer();
+
+        for (x=0 ; x < 10 ; x++) {
+            if (randomAnswer1 === randomAnswer2) {
+                randomAnswer2 = artist.getRandomAnswer();
+            }
+        }
 
         answersDiv = document.createElement('div');         // Div created to place the answers inside
         answersDiv.setAttribute('class', 'answer-boxes');
@@ -129,7 +151,7 @@ function Game() {
 
         buttona = document.createElement('h5');
         buttona.setAttribute('class', 'choice-a');
-        buttona.innerText = artist.notAnswer1;
+        buttona.innerText = randomAnswer1;
 
         buttonb = document.createElement('h5');
         buttonb.setAttribute('class', 'choice-b');
@@ -137,7 +159,7 @@ function Game() {
 
         buttonc = document.createElement('h5');
         buttonc.setAttribute('class', 'choice-c');
-        buttonc.innerText = artist.notAnswer2;
+        buttonc.innerText = randomAnswer2;
 
         innerDivA.appendChild(buttona);
         innerDivB.appendChild(buttonb);
@@ -276,4 +298,4 @@ function Game() {
         buildSplash();
     }
 }
-window.addEventListener('load', Game)
+window.addEventListener('load', main)

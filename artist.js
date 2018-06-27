@@ -5,7 +5,7 @@ var artistObject = {
             songs: [ 
                 {
                     songName: 'Through the Wire',
-                    yearReleased: '2002',
+                    yearReleased: '2004',
                     songQuote: '\"If you could feel how my face felt ,You would know how Mase felt ,Thank God I ain\'t too cool for the safe belt\"',
                     albumOfSong: 'The College Dropout'
                 },
