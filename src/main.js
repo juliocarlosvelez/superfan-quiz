@@ -98,7 +98,7 @@ function main() {
     function startClickd (){      
        removeFromStart();
         setArtist = buttond.innerText;
-        mainAudio = new Audio ("audio/Dloop.mP3");
+        mainAudio = new Audio ("audio/Dloop.mp3");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside

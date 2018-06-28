@@ -191,6 +191,7 @@ body {
 img:hover {
     animation: shake 1s cubic-bezier(.46,.17,.29,.77) both;
     transform: translate3d(0, 0, 0);
+    
     backface-visibility: hidden;
     perspective: 1000px;
 }
