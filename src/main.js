@@ -77,14 +77,22 @@ function main() {
         mainAudio = new Audio ("../audio/CBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'Cardi B');
+        gif.setAttribute('src', '../images/Cgif.gif');
         getQuestion(buttonc.innerText);                     // getQuestion Called
     }
     function startClickb (){      
        removeFromStart();
         setArtist = buttonb.innerText;
-        mainAudio = new Audio ("../audio/fBBloop.m4a");
+        mainAudio = new Audio ("../audio/BBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'Bad Bunny');
+        gif.setAttribute('src', '../images/BBgif.gif');
         getQuestion(buttonb.innerText);                     // getQuestion Called
     }
     function startClickd (){      
@@ -93,6 +101,10 @@ function main() {
         mainAudio = new Audio ("../audio/Dloop.mP3");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'Drake');
+        gif.setAttribute('src', '../images/Dgif.gif');
         getQuestion(buttond.innerText);                     // getQuestion Called
     }
     function startClickjb (){      
@@ -101,6 +113,10 @@ function main() {
         mainAudio = new Audio ("../audio/JBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'J Balvin');
+        gif.setAttribute('src', '../images/JBgif.gif');
         getQuestion(buttonjb.innerText);                     // getQuestion Called
     }
     function startClickjz (){      
@@ -109,6 +125,10 @@ function main() {
         mainAudio = new Audio ("../audio/JZloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'Jay-Z');
+        gif.setAttribute('src', '../images/JZgif.gif');
         getQuestion(buttonjz.innerText);                     // getQuestion Called
     }
     function startClickk (){      
@@ -117,8 +137,14 @@ function main() {
         mainAudio = new Audio ("../audio/Kloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
+        gif = document.createElement('img');                // Div created to place questions inside
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('alt', 'Kanye');
+        gif.setAttribute('src', '../images/Kgif.gif');
         getQuestion(buttonk.innerText);                     // getQuestion Called
     }
+
+    var gif;
     var scoreDiv;
     var scoreText;
     var questionDiv;
@@ -327,7 +353,6 @@ function main() {
     var tryAgainButtonText;
     var homeButtonText;
 
-
     function endGame() {
         body = document.body;
 
@@ -343,6 +368,7 @@ function main() {
         
         if (score > 7) {
             endFanGradeText.innerText= 'You\'re a Superfan !!!';
+
         } else if (score > 4) {
             endFanGradeText.innerText= 'You\'re an OK fan. ';
         } else {
@@ -354,6 +380,8 @@ function main() {
         endGameDiv1.appendChild(endScoreDiv);
         endGameDiv1.appendChild(endFanGradeDiv);
         body.appendChild(endGameDiv1);
+
+        body.appendChild(gif);
 
         endGameDiv2 = document.createElement('div');                // Div created to place questions inside
         endGameDiv2.setAttribute('class', 'replay-buttons');
@@ -388,6 +416,7 @@ function main() {
         clicks = 0;
         score = 0;
         storeQuestion = [];
+        gif.remove();
         getQuestion(setArtist);
     }
     function removeFromStart() {
@@ -411,6 +440,7 @@ function main() {
         score = 0;
         body.setAttribute('class', 'home-page');
         mainAudio.pause();
+        gif.remove();
         buildSplash();
     }
 }
