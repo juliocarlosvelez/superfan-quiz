@@ -26,37 +26,37 @@ function main() {
         buttond = document.createElement('img');     // Button Artist option
         buttond.setAttribute('class', 'artist-button-drake');
         buttond.setAttribute('alt', 'Drake');
-        buttond.setAttribute('src', '../images/D1.png');
+        buttond.setAttribute('src', 'images/D1.png');
         buttond.innerText = 'Drake'; 
         buttonDiv.appendChild(buttond); 
         buttonc = document.createElement('img');     // Button Artist option
         buttonc.setAttribute('class', 'artist-button-cardib');
         buttonc.setAttribute('alt', 'Cardi B');
-        buttonc.setAttribute('src', '../images/CB2.png');
+        buttonc.setAttribute('src', 'images/CB2.png');
         buttonc.innerText = 'Cardi B'; 
         buttonDiv.appendChild(buttonc);
         buttonb = document.createElement('img');     // Button Artist option
         buttonb.setAttribute('class', 'artist-button-badbunny');
         buttonb.setAttribute('alt', 'Bad Bunny');
-        buttonb.setAttribute('src', '../images/BB1.png');
+        buttonb.setAttribute('src', 'images/BB1.png');
         buttonb.innerText = 'Bad Bunny'; 
         buttonDiv.appendChild(buttonb);
         buttonk = document.createElement('img');     // Button Artist option
         buttonk.setAttribute('class', 'artist-button-kanye');
         buttonk.setAttribute('alt', 'Kanye');
-        buttonk.setAttribute('src', '../images/K3.png');
+        buttonk.setAttribute('src', 'images/K3.png');
         buttonk.innerText = 'Kanye'; 
         buttonDiv.appendChild(buttonk);
         buttonjz = document.createElement('img');     // Button Artist option
         buttonjz.setAttribute('class', 'artist-button-jay');
         buttonjz.setAttribute('alt', 'Jay-Z');
-        buttonjz.setAttribute('src', '../images/J1.png');
+        buttonjz.setAttribute('src', 'images/J1.png');
         buttonjz.innerText = 'Jay-Z'; 
         buttonDiv.appendChild(buttonjz);
         buttonjb = document.createElement('img');     // Button Artist option
         buttonjb.setAttribute('class', 'artist-button-balvin');
         buttonjb.setAttribute('alt', 'J Balvin');
-        buttonjb.setAttribute('src', '../images/JB1.png');
+        buttonjb.setAttribute('src', 'images/JB1.png');
         buttonjb.innerText = 'J Balvin'; 
         buttonDiv.appendChild(buttonjb);
         
@@ -74,73 +74,73 @@ function main() {
     function startClickc (){      
         removeFromStart();
         setArtist = buttonc.innerText; 
-        mainAudio = new Audio ("../audio/CBloop.m4a");
+        mainAudio = new Audio ("audio/CBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'Cardi B');
-        gif.setAttribute('src', '../images/Cgif.gif');
+        gif.setAttribute('src', 'images/Cgif.gif');
         getQuestion(buttonc.innerText);                     // getQuestion Called
     }
     function startClickb (){      
        removeFromStart();
         setArtist = buttonb.innerText;
-        mainAudio = new Audio ("../audio/BBloop.m4a");
+        mainAudio = new Audio ("audio/BBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'Bad Bunny');
-        gif.setAttribute('src', '../images/BBgif.gif');
+        gif.setAttribute('src', 'images/BBgif.gif');
         getQuestion(buttonb.innerText);                     // getQuestion Called
     }
     function startClickd (){      
        removeFromStart();
         setArtist = buttond.innerText;
-        mainAudio = new Audio ("../audio/Dloop.mP3");
+        mainAudio = new Audio ("audio/Dloop.mP3");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'Drake');
-        gif.setAttribute('src', '../images/Dgif.gif');
+        gif.setAttribute('src', 'images/Dgif.gif');
         getQuestion(buttond.innerText);                     // getQuestion Called
     }
     function startClickjb (){      
        removeFromStart();
         setArtist = buttonjb.innerText;
-        mainAudio = new Audio ("../audio/JBloop.m4a");
+        mainAudio = new Audio ("audio/JBloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'J Balvin');
-        gif.setAttribute('src', '../images/JBgif.gif');
+        gif.setAttribute('src', 'images/JBgif.gif');
         getQuestion(buttonjb.innerText);                     // getQuestion Called
     }
     function startClickjz (){      
        removeFromStart();
         setArtist = buttonjz.innerText;
-        mainAudio = new Audio ("../audio/JZloop.m4a");
+        mainAudio = new Audio ("audio/JZloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'Jay-Z');
-        gif.setAttribute('src', '../images/JZgif.gif');
+        gif.setAttribute('src', 'images/JZgif.gif');
         getQuestion(buttonjz.innerText);                     // getQuestion Called
     }
     function startClickk (){      
        removeFromStart();
         setArtist = buttonk.innerText;
-        mainAudio = new Audio ("../audio/Kloop.m4a");
+        mainAudio = new Audio ("audio/Kloop.m4a");
         mainAudio.loop = true;
         mainAudio.play();
         gif = document.createElement('img');                // Div created to place questions inside
         gif.setAttribute('class', 'gif');
         gif.setAttribute('alt', 'Kanye');
-        gif.setAttribute('src', '../images/Kgif.gif');
+        gif.setAttribute('src', 'images/Kgif.gif');
         getQuestion(buttonk.innerText);                     // getQuestion Called
     }
 
