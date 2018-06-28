@@ -10,7 +10,7 @@ function QandA(nameOfArtist) {
     this.song = null;
     this.notSong = null;
     this.attribute = null;
-    this.randNumberOfAttribute = Math.floor(Math.random() * Math.floor(6));
+    this.randNumberOfAttribute = Math.floor(Math.random() * Math.floor(5));
     this.answer = null; 
     this.notAnswer = null;
     this.notCorrectAnswer = null;
@@ -45,9 +45,7 @@ QandA.prototype.randomQuestion = function() {
         this.attribute = this.song.songQuote
     } else if (this.randNumberOfAttribute === 4) {
         this.attribute = this.song.songQuote
-    } else if (this.randNumberOfAttribute === 5) {
-        this.attribute = this.song.songQuote
-    } 
+    }
 
     if (this.nameOfArtist === 'J Balvin' || this.nameOfArtist === 'Cardi B' || this.nameOfArtist === 'Bad Bunny') {
         this.attribute = this.song.songQuote;
@@ -100,9 +98,7 @@ QandA.prototype.getRandomAnswer = function() {
         this.attribute = this.song.songQuote
     } else if (this.randNumberOfAttribute === 4) {
         this.attribute = this.song.songQuote
-    } else if (this.randNumberOfAttribute === 5) {
-        this.attribute = this.song.songQuote
-    } 
+    }
 
     if (this.nameOfArtist === 'J Balvin' || this.nameOfArtist === 'Cardi B' || this.nameOfArtist === 'Bad Bunny') {
         this.attribute = this.song.songQuote;

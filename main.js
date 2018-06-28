@@ -100,6 +100,8 @@ function main() {
         setArtist = buttonk.innerText;
         getQuestion(buttonk.innerText);                     // getQuestion Called
     }
+    var scoreDiv;
+    var scoreText;
     var questionDiv;
     var questionText;
     var answersDiv;
@@ -109,22 +111,42 @@ function main() {
     var buttona;
     var buttonb;
     var buttonc;
-
+    var score = 0;
     var clicks = 0;
     var storeQuestion = [];
+    var answer;
 
     function getQuestion (nameofartist) {
+        
         var artist = new QandA(nameofartist);
         var currentQ = artist.randomQuestion();
-
+        var outputQ;
         body = document.body;
+        scoreDiv = document.createElement('div');                // Div created to place questions inside
+        scoreDiv.setAttribute('class', 'score');
+        scoreText = document.createElement('h3');                
+        scoreText.setAttribute('class','game-score')
+        scoreText.innerText = score+'/'+clicks;
+        scoreDiv.appendChild(scoreText);
+        body.appendChild(scoreDiv);
+        
         questionDiv = document.createElement('div');                // Div created to place questions inside
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');                
         questionText.setAttribute('class','question-text')
         
-        questionText.innerText = currentQ;
-        storeQuestion[storeQuestion.length] = currentQ;
+        
+        for (var x = 0 ; x < 40 ; x++) {
+            for (var y = 0; y < storeQuestion.length; y++){
+                if (storeQuestion[y] === currentQ) {
+                    currentQ = artist.randomQuestion();
+                }
+            }
+        }
+        
+        storeQuestion.push(currentQ);
+        outputQ = storeQuestion[storeQuestion.length-1];
+        questionText.innerText = outputQ;
         questionDiv.appendChild(questionText);
         body.appendChild(questionDiv);
 
@@ -137,29 +159,55 @@ function main() {
             }
         }
 
+        answer = artist.answer;
+
+        var threeChoices = [];
+        var choiceA = 'a';
+        var choiceB = 'b';
+        var choiceC = 'c';
+        threeChoices.push(randomAnswer1);
+        threeChoices.push(answer);
+        threeChoices.push(randomAnswer2);
+        for (var z = 0 ; z < 100 ; z++) {
+            if (z === 0) {
+                choiceA = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+                choiceB = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+                choiceC = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+            }
+            if (choiceA === choiceB) {
+                choiceB = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+            }
+            if (choiceA === choiceC) {
+                choiceC = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+            }
+            if (choiceB === choiceC) {
+                choiceC = threeChoices[Math.floor(Math.random() * Math.floor(3))];
+            }
+        }
+
         answersDiv = document.createElement('div');         // Div created to place the answers inside
         answersDiv.setAttribute('class', 'answer-boxes');
         
         innerDivA = document.createElement('div');          // Div created to place the answer
-        innerDivA.setAttribute('class', 'answer-a-box');
+        innerDivA.setAttribute('class', 'answer-a-box zoom');
         
         innerDivB = document.createElement('div');          // Div created to place the answer
-        innerDivB.setAttribute('class', 'answer-b-box');
+        innerDivB.setAttribute('class', 'answer-b-box zoom');
         
         innerDivC = document.createElement('div');          // Div created to place the answer
-        innerDivC.setAttribute('class', 'answer-c-box');
+        innerDivC.setAttribute('class', 'answer-c-box zoom');
 
         buttona = document.createElement('h5');
         buttona.setAttribute('class', 'choice-a');
-        buttona.innerText = randomAnswer1;
-
+        buttona.innerText = choiceA;
+        
         buttonb = document.createElement('h5');
         buttonb.setAttribute('class', 'choice-b');
-        buttonb.innerText = artist.answer;
+        buttonb.innerText = choiceB;
 
         buttonc = document.createElement('h5');
         buttonc.setAttribute('class', 'choice-c');
-        buttonc.innerText = randomAnswer2;
+        buttonc.innerText = choiceC;
 
         innerDivA.appendChild(buttona);
         innerDivB.appendChild(buttonb);
@@ -177,6 +225,7 @@ function main() {
         if(clicks > 10) {
             questionDiv.remove();
             answersDiv.remove(); 
+            scoreDiv.remove();
             body.setAttribute('class', 'hide');
             endGame();
         }
@@ -185,32 +234,47 @@ function main() {
     
 
     function nextQuestiona(){
+        if (buttona.innerText ===  answer) {
+            score++;
+        }
         innerDivA.removeEventListener('click', nextQuestiona);
         innerDivB.removeEventListener('click', nextQuestionb);
         innerDivC.removeEventListener('click', nextQuestionc);
+        scoreDiv.remove();
         questionDiv.remove();
         answersDiv.remove();
         body.setAttribute('class', 'hide');
+        
         getQuestion(setArtist);
     }
 
     function nextQuestionb(){
+        if (buttonb.innerText ===  answer) {
+            score++;
+        }
         innerDivA.removeEventListener('click', nextQuestiona);
         innerDivB.removeEventListener('click', nextQuestionb);
         innerDivC.removeEventListener('click', nextQuestionc);
+        scoreDiv.remove();
         questionDiv.remove();
         answersDiv.remove();
         body.setAttribute('class', 'hide');
+        
         getQuestion(setArtist);
     }
 
     function nextQuestionc(){
+        if (buttonc.innerText === answer) {
+            score++;
+        }
         innerDivA.removeEventListener('click', nextQuestiona);
         innerDivB.removeEventListener('click', nextQuestionb);
         innerDivC.removeEventListener('click', nextQuestionc);
+        scoreDiv.remove();
         questionDiv.remove();
         answersDiv.remove();
         body.setAttribute('class', 'hide');
+        
         getQuestion(setArtist);
     }
 
@@ -236,9 +300,17 @@ function main() {
         endFanGradeDiv = document.createElement('div');                // Div created to place questions inside
         endFanGradeDiv.setAttribute('class', 'fan-grade');
         endScoreText = document.createElement('h1');                
-        endScoreText.innerText= '9 out of 10';
-        endFanGradeText = document.createElement('h1');                
-        endFanGradeText.innerText= 'You\'re a Superfan !!!';
+        endScoreText.innerText= score+' out of 10';
+        endFanGradeText = document.createElement('h1'); 
+        
+        if (score > 7) {
+            endFanGradeText.innerText= 'You\'re a Superfan !!!';
+        } else if (score > 4) {
+            endFanGradeText.innerText= 'You\'re an OK fan. ';
+        } else {
+            endFanGradeText.innerText= 'You\'re a Horrible fan !';
+        }            
+        
         endScoreDiv.appendChild(endScoreText);
         endFanGradeDiv.appendChild(endFanGradeText);
         endGameDiv1.appendChild(endScoreDiv);
@@ -276,6 +348,8 @@ function main() {
         endGameDiv1.remove();
         endGameDiv2.remove();
         clicks = 0;
+        score = 0;
+        storeQuestion = [];
         getQuestion(setArtist);
     }
     function removeFromStart() {
@@ -295,6 +369,9 @@ function main() {
         endGameDiv1.remove();
         endGameDiv2.remove();
         clicks = 0;
+        storeQuestion = [];
+        score = 0;
+        body.setAttribute('class', 'home-page');
         buildSplash();
     }
 }
