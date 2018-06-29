@@ -23,12 +23,12 @@ QandA.prototype.getSongNameQuestion = function() {
 
 QandA.prototype.getSongQuoteQuestion = function() {
     this.answer = this.song.songName;
-    return "Which song did this quote come from?\n\n"+this.song.songQuote;
+    return "Where is this lyric from?\n\n"+this.song.songQuote;
 }
 
 QandA.prototype.getAlbumOfSongQuestion = function() {
     this.answer = this.song.yearReleased;
-    return "What year was this Album released?\n\n"+this.song.albumOfSong;
+    return "What year was "+this.song.albumOfSong +" released?";
 }
 
 QandA.prototype.randomQuestion = function() {
@@ -38,13 +38,13 @@ QandA.prototype.randomQuestion = function() {
     if (this.randNumberOfAttribute === 0) {
         this.attribute = this.song.songName;
     } else if (this.randNumberOfAttribute === 1) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     } else if (this.randNumberOfAttribute === 2) {
-        this.attribute = this.song.albumOfSong
+        this.attribute = this.song.albumOfSong;
     } else if (this.randNumberOfAttribute === 3) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     } else if (this.randNumberOfAttribute === 4) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     }
 
     if (this.nameOfArtist === 'J Balvin' || this.nameOfArtist === 'Cardi B' || this.nameOfArtist === 'Bad Bunny') {
@@ -91,13 +91,13 @@ QandA.prototype.getRandomAnswer = function() {
     if (this.randNumberOfAttribute === 0) {
         this.attribute = this.song.songName;
     } else if (this.randNumberOfAttribute === 1) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     } else if (this.randNumberOfAttribute === 2) {
-        this.attribute = this.song.albumOfSong
+        this.attribute = this.song.albumOfSong;
     } else if (this.randNumberOfAttribute === 3) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     } else if (this.randNumberOfAttribute === 4) {
-        this.attribute = this.song.songQuote
+        this.attribute = this.song.songQuote;
     }
 
     if (this.nameOfArtist === 'J Balvin' || this.nameOfArtist === 'Cardi B' || this.nameOfArtist === 'Bad Bunny') {

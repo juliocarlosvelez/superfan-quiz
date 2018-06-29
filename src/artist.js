@@ -233,7 +233,7 @@ var artistObject = {
                     songName: 'Red Barz',
                     yearReleased: '2017',
                     songQuote: '\"You a real n***a mad at a bi**ch for getting bread?, You\'s a bi**ch from birth, you just grew a third leg, woo!\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Red Barz'
                 },
                 {
                     songName: 'Bartier Cardi',
@@ -257,7 +257,7 @@ var artistObject = {
                     songName: 'Finesse (Remix)',
                     yearReleased: '2018',
                     songQuote: '\"It\'s my big Bronx boogie, got all them girls shook, My big fat ass got all them boys hooked\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Finesse (Remix)'
                 },
                 {
                     songName: 'No Limit',
@@ -269,7 +269,7 @@ var artistObject = {
                     songName: 'La Modelo',
                     yearReleased: '2017',
                     songQuote: '\"Left your baby mom, now Cardi\'s your wife-to-be, Ex had me locked up, but you came to set me free\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'La Modelo'
                 },
                 {
                     songName: 'MotorSport',
@@ -304,7 +304,7 @@ var artistObject = {
                     songName: 'X',
                     yearReleased: '2018',
                     songQuote: '\"Sólo deja que yo te agarre, baby, Besos en el cuello pa\' calmar la sed, Mi mano en tu cadera pa\' empezar como e\'\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'X'
                 },
                 {
                     songName: 'Safari',
@@ -316,25 +316,25 @@ var artistObject = {
                     songName: 'Sensualidad',
                     yearReleased: '2017',
                     songQuote: '\"No traigas paraguas como quiera va\' a mojarte, La temperatura está pa\' calentarte\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Sensualidad'
                 },
                 {
                     songName: 'Downtown',
                     yearReleased: '2017',
                     songQuote: '\"Me pide que me quede ahi envencia\'o, Le digo uh mami, estoy interesa\'o, Si quieres yo me quedo pa\' otro round\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Downtown'
                 },
                 {
                     songName: 'Familiar',
                     yearReleased: '2018',
                     songQuote: '\"Y empiezo primero, Tú sabes lo que me refiero, De cero, sabes que estoy pa\' ti\"',
-                    albumOfSong: 'LP1'
+                    albumOfSong: 'Familiar ft J Balvin'
                 },
                 {
                     songName: 'Si Tu Novio Te Deja Sola',
                     yearReleased: '2017',
                     songQuote: '\"Solo me bastarán un par de horas, Y ese cabrón no va a recuperarte\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Si Tu Novio Te Deja Sola'
                 },
                 {
                     songName: 'Ahora',
@@ -364,7 +364,7 @@ var artistObject = {
                     songName: 'Travesuras (Remix)',
                     yearReleased: '2014',
                     songQuote: '\"Esque tu eres la atracción del party, Cuando arrastras con todo tu body, Mi mente esta maquinando, Pa\' poderte llevar\"',
-                    albumOfSong: 'Hits'
+                    albumOfSong: 'Travesuras (Remix)'
                 },
                 {
                     songName: 'Yo Te Lo Dije',
@@ -387,7 +387,7 @@ var artistObject = {
                     songName: 'Chambea',
                     yearReleased: '2017',
                     songQuote: '\"Gusanos como tú, yo no los tolero, Cabrón, tú eres chota, tú eres reportero, Yo no soy Don Omar pero soy bandolero \"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Chambea'
                 },
                 {
                     songName: 'I Like It',
@@ -399,37 +399,37 @@ var artistObject = {
                     songName: 'Si Tu Novio Te Deja Sola',
                     yearReleased: '2017',
                     songQuote: '\"Es más ninguna tiene brake, Yo soy un pitcher, pero a ti te voy a hacer el doble play\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Si Tu Novio Te Deja Sola'
                 },
                 {
-                    songName: 'Gucci Gang (Remix)',
+                    songName: 'Gucci Gang (Latin Remix)',
                     yearReleased: '2018',
                     songQuote: '\"Dios proteja mis neuronas, ah, Chingando por Barcelona, wuh, Blanquita pero culona\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Gucci Gang (Latin Remix)'
                 },
                 {
                     songName: 'EL BAÑO',
                     yearReleased: '2018',
                     songQuote: '\"Contigo siempre he hecho más de dos, Te calientas sola, sin ponerte en defrost\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'EL BAÑO ft Bad Bunny'
                 },
                 {
                     songName: 'Mayores',
                     yearReleased: '2017',
                     songQuote: '\"Si quieres a la cama yo te llevo el desayuno, Como yo ninguno, un caballero con veintiuno, Yo estoy puesto pa\' toas\' tus locuras\"',
-                    albumOfSong: 'BG1'
+                    albumOfSong: 'Mayores ft Bad Bunny'
                 },
                 {
                     songName: 'Sensualidad',
                     yearReleased: '2017',
                     songQuote: '\"La baby está dura y sin el cirujano, Vístete que hoy te woa\' buscar temprano, Quiero que to\' nos vean agarrados de mano\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Sensualidad'
                 },
                 {
                     songName: 'Soy Peor',
                     yearReleased: '2016',
                     songQuote: '\"Hoy yo no quiero fumar regular, Tráiganme un kush que me haga sentir espectacular, Para celebrar que ya no estás tú para especular\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Soy Peor'
                 },
                 {
                     songName: 'Krippy Kush',
@@ -441,37 +441,37 @@ var artistObject = {
                     songName: 'Dura (Remix)',
                     yearReleased: '2018',
                     songQuote: '\"Parece modelo, le sobra el piquete, Si fuera stripper le llovieran los billete\', Antes que la nota se me trepE, Quiero bailar contigo pa\' ver si tú le mete\'\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Dura (Remix)'
                 },
                 {
                     songName: 'Te Boté (Remix)',
                     yearReleased: '2018',
                     songQuote: '\"Odio saber que en ti una ve\' má\' yo confié, Odio to\' lo\' \"Te amo\" que mil vece\' te texteé, Baby, mejor que tú ahora tengo como die\', Lo nuestro iba en un Bugatti y te quedaste a pie\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Te Boté (Remix)'
                 },
                 {
                     songName: 'Me Acostumbré',
                     yearReleased: '2017',
                     songQuote: '\"La movie siempre es estelar, Si no me crees pregunta en el Banco Popular\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Me Acostumbré'
                 },
                 {
                     songName: 'Amorfoda',
                     yearReleased: '2018',
                     songQuote: '\"Si pudiera te pidiera que devuelva\' to\' los besos que te di, La\' palabra\' y todo el tiempo que perdí, Me arrepiento una y mil veces de haber confiao\' en ti\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Amorfoda'
                 },
                 {
                     songName: 'Tú No Metes Cabra',
                     yearReleased: '2017',
                     songQuote: '\"Yo controlo la calle sin ser bichote, Un melón y pico \'entro el pote, Yo tengo el pique flow chipotle\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Tú No Metes Cabra'
                 },
                 {
                     songName: 'Pa Ti',
                     yearReleased: '2016',
                     songQuote: '\"Baby, obvio no eres la primera, pero eres la verdadera, Con la que mezclo amor y bellaquera, Con la que gasto lo que se genera, Yo no me pongo pa\' cualquiera\"',
-                    albumOfSong: 'Not on an Album'
+                    albumOfSong: 'Pa Ti'
                 }
             ]
         },
@@ -485,10 +485,10 @@ var artistObject = {
                     albumOfSong: 'Views'
                 },
                 {
-                    songName: 'Best I Ever Had',
-                    yearReleased: '2009',
-                    songQuote: '\"Always felt like you was so accustomed to the fast life, Have a ni**a thinkin\' that he met you in a past life\"',
-                    albumOfSong: 'So Far Gone'
+                    songName: 'Emotionless',
+                    yearReleased: '2018',
+                    songQuote: '\"Look at the way we live \n I wasn\'t hiding my kid from the world \n I was hiding the world from my kid\"',
+                    albumOfSong: 'Scorpion'
                 },
                 {
                     songName: 'Successful',
@@ -524,13 +524,13 @@ var artistObject = {
                     songName: 'No Tellin\'',
                     yearReleased: '2015',
                     songQuote: '\"I took the summer off to get it right, Yeah, I gave these boys a shot and they f**kin\' failed, Ni**as like "You took the summer off? We couldn\'t tell"\"',
-                    albumOfSong: 'If You\'re Reading This It\'s Too Late'
+                    albumOfSong: 'If You\'re Reading This\nIt\'s Too Late'
                 },
                 {
                     songName: 'Jungle',
                     yearReleased: '2015',
                     songQuote: '\"She forgave me for everything, this a forever thing, Hate that I treat it like it\'s a whatever thing, Trust me girl, this shit is everything to me\"',
-                    albumOfSong: 'If You\'re Reading This It\'s Too Late'
+                    albumOfSong: 'If You\'re Reading This\nIt\'s Too Late'
                 },
                 {
                     songName: 'Controlla',
@@ -548,7 +548,7 @@ var artistObject = {
                     songName: 'Diplomatic Immunity',
                     yearReleased: '2018',
                     songQuote: '\"Calamari rings and tomato, I got the sauce and now shorties keep claimin\' preggo, Wakin\' up at 6 PM like, \"Where does the day go?\", Forecastin\' tornadoes, brainstormin\' retaliation at dinner tables\"',
-                    albumOfSong: 'Scary Hours ep'
+                    albumOfSong: 'Scary Hours EP'
                 },
                 {
                     songName: 'The Motto',

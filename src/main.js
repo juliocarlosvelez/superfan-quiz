@@ -6,12 +6,12 @@ function main() {
     var body;
     var titleDiv;
     var title;
-    var buttond
-    var buttonc
-    var buttonb
-    var buttonk
-    var buttonjz
-    var buttonjb
+    var buttond;
+    var buttonc;
+    var buttonb;
+    var buttonk;
+    var buttonjz;
+    var buttonjb;
     function buildSplash(){
         body = document.body;
         titleDiv = document.createElement('div');
@@ -61,12 +61,12 @@ function main() {
         buttonDiv.appendChild(buttonjb);
         
         body.appendChild(buttonDiv);                    // Div of Artist's placed after Heading Div
-        buttonc.addEventListener('click', startClickc)    // Once you press on Artist Button startClick is called
-        buttonb.addEventListener('click', startClickb)
-        buttond.addEventListener('click', startClickd)
-        buttonjb.addEventListener('click', startClickjb)
-        buttonjz.addEventListener('click', startClickjz)
-        buttonk.addEventListener('click', startClickk)
+        buttonc.addEventListener('click', startClickc);    // Once you press on Artist Button startClick is called
+        buttonb.addEventListener('click', startClickb);
+        buttond.addEventListener('click', startClickd);
+        buttonjb.addEventListener('click', startClickjb);
+        buttonjz.addEventListener('click', startClickjz);
+        buttonk.addEventListener('click', startClickk);
     }
     buildSplash();
     var setArtist;
@@ -170,7 +170,7 @@ function main() {
         scoreDiv = document.createElement('div');                // Div created to place questions inside
         scoreDiv.setAttribute('class', 'score');
         scoreText = document.createElement('h3');                
-        scoreText.setAttribute('class','game-score')
+        scoreText.setAttribute('class','game-score');
         scoreText.innerText = score+'/'+clicks;
         scoreDiv.appendChild(scoreText);
         body.appendChild(scoreDiv);
@@ -178,7 +178,7 @@ function main() {
         questionDiv = document.createElement('div');                // Div created to place questions inside
         questionDiv.setAttribute('class', 'question-box paper');
         questionText = document.createElement('h3');                
-        questionText.setAttribute('class','question-text')
+        questionText.setAttribute('class','question-text');
         
         
         for (var x = 0 ; x < 100 ; x++) {
@@ -261,29 +261,29 @@ function main() {
         answersDiv.appendChild(innerDivB);
         answersDiv.appendChild(innerDivC);
         body.appendChild(answersDiv);             // This is what must be edited for 
-        body.setAttribute('class', 'game-screen') // individual Artist background color go to css-html-js
+        body.setAttribute('class', 'game-screen'); // individual Artist background color go to css-html-js
         
         if(nameofartist === 'Kanye') {
-            body.setAttribute('class', 'game-screen-kanye')
+            body.setAttribute('class', 'game-screen-kanye');
         }
         if(nameofartist === 'Drake') {
-            body.setAttribute('class', 'game-screen-drake')
+            body.setAttribute('class', 'game-screen-drake');
         }
         if(nameofartist === 'Jay-Z') {
-            body.setAttribute('class', 'game-screen-jayz')
+            body.setAttribute('class', 'game-screen-jayz');
         }
         if(nameofartist === 'Bad Bunny') {
-            body.setAttribute('class', 'game-screen-badbunny')
+            body.setAttribute('class', 'game-screen-badbunny');
         }
         if(nameofartist === 'J Balvin') {
-            body.setAttribute('class', 'game-screen-jbalvin')
+            body.setAttribute('class', 'game-screen-jbalvin');
         }
         if(nameofartist === 'Cardi B') {
-            body.setAttribute('class', 'game-screen-cardi')
+            body.setAttribute('class', 'game-screen-cardi');
         }
-        innerDivA.addEventListener('click', nextQuestiona)
-        innerDivB.addEventListener('click', nextQuestionb)
-        innerDivC.addEventListener('click', nextQuestionc)
+        innerDivA.addEventListener('click', nextQuestiona);
+        innerDivB.addEventListener('click', nextQuestionb);
+        innerDivC.addEventListener('click', nextQuestionc);
 
         clicks++;
         if(clicks > 10) {
